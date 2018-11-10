@@ -1,4 +1,4 @@
-import discord
+iimport discord
 from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
@@ -10,8 +10,12 @@ client = commands.Bot(command_prefix = "+")
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.game(name='Alt Generator | v0,1'))
-    print("De bot is klaar voor gebruik!")
+    await client.change_presence(game=discord.Game(name='Alt Gen | +help | v0,01'))
+
+    print('Logged in as')
+    print(client.user.name)
+    print(client.user.id)
+    print('------')
 
 @client.event
 async def on_message(message):
@@ -24,4 +28,4 @@ async def on_message(message):
     if message.content == "+shop":
         await client.send_message(message.channel, "Shop: \nhttps://selly.gg/@Refresh")
 
-client.run("NTA5Nzk4NzMwOTQyMzgyMDgw.DsivnQ.hbTCGaFoAoooAJaoL2Ul3_8c4SE")
+client.run("NTA5Nzk4NzMwOTQyMzgyMDgw.DshoYw.t2h6O_b66wCHm7Ij7P-unWy6nOg")
