@@ -28,6 +28,6 @@ async def on_message(message):
     if message.content == "+shop":
         await client.send_message(message.channel, "**Shop**: \nhttps://selly.gg/@Refresh")
     if message.content == "+invite":
-        await client.send_message(message.channel, "this is the bots invite link: ```https://discordapp.com/oauth2/authorize?&client_id=NTA5Nzk4NzMwOTQyMzgyMDgw.DsjKtg.mjYWvusDoMyds5eD-b2hD44gUOI&scope=bot&permissions=8``` ")
+        await client.send_message(message.channel, "this is the bots invite link: ```https://discordapp.com/oauth2/authorize?&client_id=509798730942382080&scope=bot&permissions=8``` ")
 
 client.run("NTA5Nzk4NzMwOTQyMzgyMDgw.DshoYw.t2h6O_b66wCHm7Ij7P-unWy6nOg")
