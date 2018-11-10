@@ -23,4 +23,4 @@ async def on_message(message):
     if message.content == "+shop":
         await client.send_message(message.channel, "Shop: \nhttps://selly.gg/@Refresh%22")
 
-client.run("NTA5Nzk4NzMwOTQyMzgyMDgw.DscbJw.p4VWHnqGT47251z7OqyyaNWSpiE")
+client.run("NTA5Nzk4NzMwOTQyMzgyMDgw.DshoYw.t2h6O_b66wCHm7Ij7P-unWy6nOg")
