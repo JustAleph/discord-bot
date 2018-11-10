@@ -9,8 +9,8 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "+")
 
 @client.event
-async def wait_until_login():
-    await client.change_presence(game=discord.Game(name='Alt Generator | v0,1 |'))
+async def change_status(self):
+    await self.bot.change_presence(game=discord.Game(name="Alt Generator | v0,1"))`
 
 @client.event
 async def on_ready():
