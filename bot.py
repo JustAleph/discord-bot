@@ -9,11 +9,8 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "+")
 
 @client.event
-async def change_status(self):
-    await self.bot.change_presence(game=discord.Game(name="Alt Generator | v0,1"))
-
-@client.event
 async def on_ready():
+    await client.change_presence(game=discord.game(name='Alt Generator | v0,1'))
     print("De bot is klaar voor gebruik!")
 
 @client.event
@@ -27,4 +24,4 @@ async def on_message(message):
     if message.content == "+shop":
         await client.send_message(message.channel, "Shop: \nhttps://selly.gg/@Refresh")
 
-client.run("NTA5Nzk4NzMwOTQyMzgyMDgw.DshoYw.t2h6O_b66wCHm7Ij7P-unWy6nOg")
+client.run("TOKEN")
