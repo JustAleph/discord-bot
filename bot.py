@@ -15,11 +15,11 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content == ".minecraft":
-        await client.send_message(message.author, random.choice([" **Alt Generator** \n Here is your Minecraft Alt! \n email:pass \n \n Made by BlockBuster594✓ᵛᵉʳᶦᶠᶦᵉᵈ#6784 ", " Alt Generator \n Here is your Minecraft Alt! \n email:pass \n \n Made by BlockBuster594✓ᵛᵉʳᶦᶠᶦᵉᵈ#6784 "]))
+        await client.send_message(message.author, "**Alt Generator** \n Here is your Minecraft Alt! \n email:pass \n \n Made by BlockBuster594✓ᵛᵉʳᶦᶠᶦᵉᵈ#6784 ")
     if message.content == ".special":
-        await client.send_message(message.author, random.choice([" **Alt Generator** \n Here is your Special Alt! \n email:pass \n \n Made by BlockBuster594✓ᵛᵉʳᶦᶠᶦᵉᵈ#6784 ", " Alt Generator \n Here is your Special Alt! \n email:pass \n \n Made by BlockBuster594✓ᵛᵉʳᶦᶠᶦᵉᵈ#6784 "]))
+        await client.send_message(message.author, "**Alt Generator** \n Here is your Special Alt! \n email:pass \n \n Made by BlockBuster594✓ᵛᵉʳᶦᶠᶦᵉᵈ#6784 ")
     if message.content == ".help":
-        await client.send_message(message.channel, "**Commands** \n \n.help \n Show this. \n \n.minecraft \n Only works in the generator channel. \n \n.special \n Only works in the generator channel. \n \n.shop \n Sends the shop link.")
+        await client.send_message(message.channel, "**Commands** \n \n**.help** \n Show this. \n \n**.minecraft** \n Gives you a free Minecraft alt. \n \n**.special** \n Gives you a free Proxy list. \n \n**.shop** \n Sends the shop link. \n \n**.invite** \n Invite the Alt Generator to your own server.")
     if message.content == ".shop":
         await client.send_message(message.channel, "**Shop**: \nhttps://selly.gg/@Refresh")
     if message.content == ".invite":
