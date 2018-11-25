@@ -4,10 +4,6 @@ from discord.ext import commands
 client = commands.Bot(command_prefix = ".")
 client.remove_command('help')
 
-
-Combo=[combos.split('\n') for combos in open('minecraft_bot_combos.txt','r').readlines()]
-print (Combo)
-
 @client.event
 async def on_ready():
     await client.change_presence(game=discord.Game(name='Alt Gen | .help | v0,01'))
