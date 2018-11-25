@@ -8,7 +8,7 @@ client.remove_command('help')
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.Game(name='Alt Gen | .help | v0,01'))
+    await client.change_presence(game=discord.Game(name='Alt Gen | .help | v5,7'))
 
     print('Logged in as')
     print(client.user.name)
