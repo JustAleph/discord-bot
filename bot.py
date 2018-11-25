@@ -1,6 +1,8 @@
 import discord
 from discord.ext import commands
 
+import os
+
 client = commands.Bot(command_prefix = ".")
 client.remove_command('help')
 
@@ -38,5 +40,5 @@ async def on_message(message):
         embed.add_field(name="'.help'", value="Showes this message", inline=False)
         embed.set_footer(text="Refresh Alts © 2018 all rights reserved",icon_url= "https://cdn.discordapp.com/avatars/509798730942382080/9b2a0235965da5f7b06503fbbddad025.png?size=512")
         await client.send_message(message.channel, embed=embed)
-
-client.login(process.env.BOT_TOKEN);
+        
+(client.run(os.environ["BOT_TOKEN"])
