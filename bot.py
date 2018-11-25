@@ -39,4 +39,4 @@ async def on_message(message):
         embed.set_footer(text="Refresh Alts © 2018 all rights reserved",icon_url= "https://cdn.discordapp.com/avatars/509798730942382080/9b2a0235965da5f7b06503fbbddad025.png?size=512")
         await client.send_message(message.channel, embed=embed)
 
-client.login(process.env.BOT_TOKEN)
+client.login(process.env.BOT_TOKEN);
