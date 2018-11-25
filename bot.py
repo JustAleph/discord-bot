@@ -34,10 +34,10 @@ async def on_message(message):
     elif message.content.startswith('.help'):
         embed=discord.Embed(title="here are all my commands!", color=0x3498db)
         embed.set_author(name="Refresh Alts", icon_url="https://cdn.discordapp.com/avatars/509798730942382080/9b2a0235965da5f7b06503fbbddad025.png?size=512")
-        embed.add_field(name="'.minecraft'", value="Gives you a free minecraft alt!", inline=False)
-        embed.add_field(name="'.shop'", value="Gives the link to our Alt shop!", inline=False)
-        embed.add_field(name="'.invite'", value="Invite me to your own server!", inline=False)
-        embed.add_field(name="'.help'", value="Showes this message", inline=False)
+        embed.add_field(name=".minecraft", value="Gives you a free minecraft alt!", inline=False)
+        embed.add_field(name=".shop", value="Gives the link to our Alt shop!", inline=False)
+        embed.add_field(name=".invite", value="Invite me to your own server!", inline=False)
+        embed.add_field(name=".help", value="Showes this message", inline=False)
         embed.set_footer(text="Refresh Alts © 2018 all rights reserved",icon_url= "https://cdn.discordapp.com/avatars/509798730942382080/9b2a0235965da5f7b06503fbbddad025.png?size=512")
         await client.send_message(message.channel, embed=embed)
         
