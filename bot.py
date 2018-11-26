@@ -47,7 +47,7 @@ async def on_message(message):
 @client.event
 async def on_message(message):
     
-  lines = [line.rstrip('\n') for line in open('test.rtf')]
+  lines = [line.rstrip('\n') for line in open('combos.txt')]
   randyLineNum = randint(0, len(lines))
   randomLine = lines[randyLineNum]
 
