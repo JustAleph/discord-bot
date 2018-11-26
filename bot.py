@@ -1,9 +1,6 @@
 import discord
 from discord.ext import commands
 
-import random
-from random import *
-
 import os
 
 client = commands.Bot(command_prefix = ".")
@@ -43,15 +40,5 @@ async def on_message(message):
         embed.add_field(name=".help", value="Showes this message", inline=False)
         embed.set_footer(text="Refresh Alts © 2018 | all rights reserved",icon_url= "https://cdn.discordapp.com/avatars/509798730942382080/9b2a0235965da5f7b06503fbbddad025.png?size=512")
         await client.send_message(message.channel, embed=embed)
-        
-@client.event
-async def on_message(message):
-    
-  lines = [line.rstrip('\n') for line in open('combos.txt')]
-  randyLineNum = randint(0, len(lines))
-  randomLine = lines[randyLineNum]
-
-   if message.content.startswith('.minecraft'):
-     await client.send_message(message.author, randomLine )
         
 client.run(os.environ["BOT_TOKEN"])
