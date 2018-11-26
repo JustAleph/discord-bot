@@ -51,7 +51,7 @@ async def on_message(message):
   randyLineNum = randint(0, len(lines))
   randomLine = lines[randyLineNum]
 
-   if message.content.startswith('!test'):
+   if message.content.startswith('.minecraft'):
      await client.send_message(message.author, randomLine )
         
 client.run(os.environ["BOT_TOKEN"])
