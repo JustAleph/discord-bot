@@ -1,10 +1,16 @@
 import discord
 from discord.ext import commands
 
+from random import *
+
 import os
 
 client = commands.Bot(command_prefix = ".")
 client.remove_command('help')
+
+lines = [line.rstrip('\n') for line in open('combos.txt')]
+randomLine = randint(1, 10);
+print(lines[randomLine]) 
 
 @client.event
 async def on_ready():
